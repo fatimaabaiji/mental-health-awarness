@@ -1,0 +1,10 @@
+body{
+    background-color: aqua;
+}
+footer{
+    background-color: rgb(199, 163, 163);
+    color: white;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
