@@ -1,183 +1,30 @@
-.journal-area {
-    margin-top: 2px;
-}
-
-.journal-textarea {
-    width: 100%;
-    height: 300px;
-    padding: 15px;
-    border-radius: 10px;
-    border: 1px solid #ced4da;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.cta-button {
-    margin-top: 20px;
-    display: block;
-    width: 100%;
-    padding: 15px;
-    font-size: 18px;
-    border-radius: 10px;
-}
-
-body {
-    background-color: aqua;
-}
-
-#hero {
-    background: url(../images/hero3.webp) no-repeat center center/cover;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:#2C2C2C;
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: blanchedalmond;
 }
 
 #navbar {
-    background-color: #EB8DAB !important;
+    background-color: #e5a7bb !important;
     color: #2C2C2C !important;
-    padding: 20px 0 !important;
 }
 
-#image{
-    width: 100%!important;
-    height: 100% !important;
-    border-radius: 50%!important;
-
-}
-#custom-layout{
-    background-color: #EB8DAB !important;
-}
-#image-placeholder{
-    display: flex;
+#hero {
+    background: url(../images/hero3.webp) no-repeat center center/cover ;
+    background-size: cover ;
+    height: 100vh ;
+    display: flex ;
     justify-content: center;
-    align-items: center;
+    align-items: center ;
+    color: #2C2C2C ;
 }
-.height{
-    background-color: #2C2C2C;
+#middle{
+    border-radius: 50%;
+}
+#footer {
+    background-color: #e5a7bb !important;
+    color: #2C2C2C ;
+    position:relative;
+    bottom: 0;
     width: 100%;
-    min-height: 250px;
-    
-}
-
-footer#footer {
-    background-color: #EB8DAB !important;
-    color: #2C2C2C !important;
-    position:relative  !important;
-    bottom: 0 !important;
-    height: 150px !important;
-    width: 100% !important;
-    padding: 20px 0 !important;
-}
-
-footer#footer .container {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-}
-
-footer#footer .social-media {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 10px;
-}
-
-footer#footer .social-media li {
-    display: inline;
-}
-
-footer#footer .social-media a {
-    color: #2C2C2C;
-    text-decoration: none;
-    transition: color 0.3s, transform 0.3s;
-}
-
-footer#footer .social-media a:hover {
-    color: #2C2C2C;
-    transform: scale(1.1);
-}
-
-footer#footer a:hover {
-    text-decoration: underline;
-}
-    
- 
-
-footer#footer .container {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-}
-
-footer#footer .social-media {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 10px;
-}
-
-footer#footer .social-media li {
-    display: inline;
-}
-
-footer#footer .social-media a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s, transform 0.3s;
-}
-
-footer#footer .social-media a:hover {
-    color: #ffcc00;
-    transform: scale(1.1);
-}
-
-footer#footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer#footer a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive styles */
-@media (max-width: 767px) {
-    footer#footer .container {
-        flex-direction: column !important;
-        text-align: center !important;
-    }
-
-    footer#footer .text-right {
-        text-align: center !important;
-        margin-top: 20px !important;
-    }
-}
-
-/* Custom styles to override Bootstrap */
-
-/* Right-align navigation links on large devices */
-@media (min-width: 992px) {
-    .navbar-nav {
-        margin-left: auto !important;
-    }
-}
-
-/* Show navigation links on tablets and larger devices */
-@media (min-width: 768px) {
-    .navbar-collapse {
-        display: flex !important;
-        justify-content: flex-end !important;
-    }
-}
-
-/* Dropdown navigation on mobile devices */
-@media (max-width: 767px) {
-    .navbar-nav {
-        display: flex !important;
-        flex-direction: column !important;
-    }
 }
