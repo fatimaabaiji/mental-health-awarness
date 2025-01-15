@@ -7,7 +7,7 @@ body{
     background-color: rgb(168, 180, 32)!important;
     color: #2C2C2C ;
     width: 100%;
-    position:sticky;
+    position:fixed;
     top: 0;
 }
 /*hero*/
@@ -53,6 +53,10 @@ body{
     position:absolute;
     bottom: 0;
     
+}
+input .form-control{
+    width: 100%;
+    margin: 0 auto;
 }
 /*media query for mobile devices*/
 @media screen and (max-width: 768px) {
