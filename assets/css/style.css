@@ -46,23 +46,24 @@ body {
     border-radius: 50%!important;
 
 }
-.left{
+div .left {
     display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 0;
+    justify-content: flex-start;
+    position: relative;
+    left:0;
 }
-.image-centered{
+
+div .image-centered {
     display: flex;
     justify-content: center;
-    position: absolute;
-    right: 0;
+    position: relative;
 }
-.right{
+
+div .right {
     display: flex;
-    justify-content: center;
-    position: absolute;
-    right: 0;
+    justify-content: flex-end;
+    position: relative;
+    right:0;
 }
 footer#footer {
     background-color: #EB8DAB !important;
