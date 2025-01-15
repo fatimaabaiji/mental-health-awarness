@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="assets/images/logo.png" alt="Logo" style="height: 30px;">
                 MindSync Collective
@@ -47,23 +47,32 @@
     </header>
 
     <div class="container">
-        <div class="row"></div>
-            <div id="left" class="col-md-5"></div>
-                <h3>Understanding Mental Health</h3>
-                <p>Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood. Over the course of your life, if you experience mental health problems, your thinking, mood, and behavior could be affected. Many factors contribute to mental health problems, including biological factors, life experiences, and family history of mental health problems. Mental health problems are common but help is available. People with mental health problems can get better and many recover completely.</p>
-                <h3>Importance of Mental Health</h3>
-                <p>Mental health is crucial because it influences every aspect of our lives. Good mental health allows individuals to realize their full potential, cope with the stresses of life, work productively, and make meaningful contributions to their communities. It is essential for maintaining healthy relationships, making sound decisions, and leading a fulfilling life. Neglecting mental health can lead to severe consequences, including emotional distress, physical health problems, and impaired functioning in daily activities. Therefore, prioritizing mental health is vital for overall well-being and quality of life.</p>
+        <div id="custom-layout" class="row">
+            <div class="col-md-5">
+                <div class="height">
+                    <h3>Understanding Mental Health</h3>
+                    <p>Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood. Over the course of your life, if you experience mental health problems, your thinking, mood, and behavior could be affected. Many factors contribute to mental health problems, including biological factors, life experiences, and family history of mental health problems. Mental health problems are common but help is available. People with mental health problems can get better and many recover completely.</p>
+                </div>
+                <div class="height">
+                    <h3>Importance of Mental Health</h3>
+                    <p>Mental health is crucial because it influences every aspect of our lives. Good mental health allows individuals to realize their full potential, cope with the stresses of life, work productively, and make meaningful contributions to their communities. It is essential for maintaining healthy relationships, making sound decisions, and leading a fulfilling life. Neglecting mental health can lead to severe consequences, including emotional distress, physical health problems, and impaired functioning in daily activities. Therefore, prioritizing mental health is vital for overall well-being and quality of life.</p>
+                </div>
             </div>
-            <div id="image-centered" class="col-md-2 text-center justify-content-center">
+            <div id="image-placeholder" class="col-md-2 text-center justify-content-center">
                 <img id="Image" src="assets/images/hands-holding-each-others.jpg" alt="Center Image" class="img-fluid rounded-circle">
             </div>
-            <div id="rights" class="col-md-5">
-                <h3>Common Mental Health Disorders</h3>
-                <p>There are various mental health disorders that affect millions of people worldwide. Some of the most common include anxiety disorders, depression, bipolar disorder, and schizophrenia. Each of these conditions has its own set of symptoms and challenges, but they can all significantly impact a person's quality of life. Understanding these disorders and their effects can help reduce stigma and promote better mental health care.</p>
-                <h3>Breaking the Stigma</h3>
-                <p>One of the biggest challenges in mental health awareness is the stigma associated with mental health issues. Many people feel ashamed or embarrassed to seek help due to societal misconceptions and prejudices. Breaking the stigma involves educating the public, promoting open conversations about mental health, and encouraging individuals to seek help without fear of judgment. By fostering a supportive and understanding environment, we can help those struggling with mental health issues feel more comfortable reaching out for the assistance they need.</p>
+            <div id="text-block" class="col-md-5">
+                <div class="height">
+                    <h3>Common Mental Health Disorders</h3>
+                    <p>There are various mental health disorders that affect millions of people worldwide. Some of the most common include anxiety disorders, depression, bipolar disorder, and schizophrenia. Each of these conditions has its own set of symptoms and challenges, but they can all significantly impact a person's quality of life. Understanding these disorders and their effects can help reduce stigma and promote better mental health care.</p>
+                </div>
+                <div class="height">
+                    <h3>Breaking the Stigma</h3>
+                    <p>One of the biggest challenges in mental health awareness is the stigma associated with mental health issues. Many people feel ashamed or embarrassed to seek help due to societal misconceptions and prejudices. Breaking the stigma involves educating the public, promoting open conversations about mental health, and encouraging individuals to seek help without fear of judgment. By fostering a supportive and understanding environment, we can help those struggling with mental health issues feel more comfortable reaching out for the assistance they need.</p>
+                </div>
             </div>
         </div>
+
         <div class="row mt-4">
             <div class="col-12">
                 <p>Finding more information about mental health awareness is crucial for understanding and supporting those who may be struggling. There are numerous resources available, including online articles, support groups, and professional organizations dedicated to mental health. By educating ourselves and others, we can create a more compassionate and informed society that prioritizes mental well-being. Remember, seeking help is a sign of strength, and there is always support available for those who need it.</p>
@@ -71,36 +80,35 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-8"></div>
+            <div class="col-md-8">
                 <div class="journal-area">
-
+                    <h2 class="text-center">Reflect on Personal Feelings and Mental State</h2>
+                    <textarea class="journal-textarea" placeholder="Start journaling here..."></textarea>
+                    <button class="btn btn-primary cta-button">Seek Help</button>
                 </div>
-                    
-            </div>  
+            </div>
         </div>
-
     </div>
-
-
 
     <!-- Footer -->
     <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 footer-left"></div>
+                <div class="col-md-6">
+                    <h3>MindSync Collective</h3>
                     <p>© 2025 MindSync Collective. All rights reserved.</p>
                     <p>
                         <i class="fas fa-map-marker-alt"></i> 1234 Street Name, City, Country<br>
-                        <i class="fas fa-phone"></i> (123) 456-7890<br>
-                        <i class="fas fa-envelope"></i> info@mindsync.collective.com
+                        <i class="fas fa-phone"></i> <a href="tel:1234567890">(123) 456-7890</a><br>
+                        <i class="fas fa-envelope"></i> info@example.com
                     </p>
                 </div>
-                <div class="col-md-6 footer-right text-right">
+                <div class="col-md-6 text-right">
                     <h3>Connect</h3>
-                    <ul class="social-media list-inline"></ul>
-                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <ul class="social-media">
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
                     </ul>
                 </div>
             </div>

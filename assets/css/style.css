@@ -46,25 +46,21 @@ body {
     border-radius: 50%!important;
 
 }
-div .left {
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
-    left:0;
+#custom-layout{
+    background-color: #EB8DAB !important;
 }
-
-div .image-centered {
+#image-placeholder{
     display: flex;
     justify-content: center;
-    position: relative;
+    align-items: center;
+}
+.height{
+    background-color: #2C2C2C;
+    width: 100%;
+    min-height: 250px;
+    
 }
 
-div .right {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    right:0;
-}
 footer#footer {
     background-color: #EB8DAB !important;
     color: #2C2C2C !important;
