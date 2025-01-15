@@ -5,7 +5,10 @@ body{
 
 #navbar {
     background-color: rgb(168, 180, 32)!important;
-    color: #2C2C2C !important;
+    color: #2C2C2C ;
+    width: 100%;
+    position:sticky;
+    top: 0;
 }
 /*hero*/
 #hero {
@@ -47,7 +50,104 @@ body{
     background-color: rgb(168, 180, 32)!important;
     color: #2C2C2C ;
     width: 100%;
-    position:sticky;
+    position:absolute;
     bottom: 0;
     
 }
+/*media query for mobile devices*/
+@media screen and (max-width: 768px) {
+    #hero {
+        height: 100vh ;
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        color: #2C2C2C ;
+    }
+    #middle{
+        border-radius: 50%;
+        height: 200px;;
+    }
+    .image-size{
+        height: 200px;
+    }
+    .services{
+        font-size: 14px;
+    }
+    .service-image{
+        height: 200px;
+    }
+    #footer {
+        background-color: rgb(168, 180, 32)!important;
+        color: #2C2C2C ;
+        width: 100%;
+        position:sticky;
+        bottom: 0;
+        
+    }
+    
+}
+/*media query for tablets*/
+@media screen and (max-width: 1024px) {
+    #hero {
+        height: 100vh ;
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        color: #2C2C2C ;
+    }
+    #middle{
+        border-radius: 50%;
+        height: 200px;;
+    }
+    .image-size{
+        height: 200px;
+    }
+    .services{
+        font-size: 14px;
+    }
+    .service-image{
+        height: 200px;
+    }
+    #footer {
+        background-color: rgb(168, 180, 32)!important;
+        color: #2C2C2C ;
+        width: 100%;
+        position:sticky;
+        bottom: 0;
+        
+    }
+    
+}
+/*media query for desktops*/
+@media screen and (min-width: 1024px) {
+    #hero {
+        height: 100vh ;
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        color: #2C2C2C ;
+    }
+    #middle{
+        border-radius: 50%;
+        height: 200px;;
+    }
+    .image-size{
+        height: 400px;
+    }
+    .services{
+        font-size: 14px;
+    }
+    .service-image{
+        height: 200px;
+    }
+    #footer {
+        background-color: rgb(168, 180, 32)!important;
+        color: #2C2C2C ;
+        width: 100%;
+        position:sticky;
+        bottom: 0;
+        
+    }
+    
+}
+
