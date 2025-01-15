@@ -1,5 +1,5 @@
 body{
-    margin: 0 ;
+    
     padding: 0 ;
 }
 
@@ -7,17 +7,17 @@ body{
     background-color: rgb(168, 180, 32)!important;
     color: #2C2C2C !important;
 }
-
+/*hero*/
 #hero {
-    background: url(../images/hero3.webp) no-repeat center center/cover ;
+    background: url(../images/bridge2.jpg) no-repeat center center/cover ;
     background-size: cover ;
-    height: 500px ;
+    height: 100vh ;
     display: flex ;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     color: #2C2C2C ;
 }
-
+/*hero image btn sizing*/
 #btn{
     width:auto;
     display: flex;
@@ -25,17 +25,20 @@ body{
     align-items: center;
     margin:0 auto;
 }
+/*middle image to make round*/
 #middle{
     border-radius: 50%;
     height: 200px;;
 }
+/*make all the images the same size*/
 .image-size{
     height: 400px;
 }
 #footer {
     background-color: rgb(168, 180, 32)!important;
     color: #2C2C2C ;
-    position:relative;
-    bottom: 0;
     width: 100%;
+    position:sticky;
+    bottom: 0;
+    
 }
