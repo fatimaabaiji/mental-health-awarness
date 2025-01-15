@@ -46,6 +46,24 @@ body {
     border-radius: 50%!important;
 
 }
+.left{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+}
+.image-centered{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+}
 footer#footer {
     background-color: #EB8DAB !important;
     color: #2C2C2C !important;
