@@ -18,11 +18,13 @@ body{
     color: #2C2C2C ;
 }
 /*hero image btn sizing*/
-#btn{
-    width:auto;
+.btn{
+    width:100px;
+    height: 30px;
     display: flex;
+    font-size: 14px;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     margin:0 auto;
 }
 /*middle image to make round*/
@@ -33,6 +35,13 @@ body{
 /*make all the images the same size*/
 .image-size{
     height: 400px;
+}
+/*make all the services images the same size*/
+.services{
+    font-size: 14px;
+}
+.service-image{
+    height: 200px;
 }
 #footer {
     background-color: rgb(168, 180, 32)!important;
