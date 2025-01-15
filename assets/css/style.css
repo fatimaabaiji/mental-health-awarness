@@ -1,28 +1,39 @@
 body{
-    margin: 0 !important;
-    padding: 0 !important;
-    background-color: blanchedalmond;
+    margin: 0 ;
+    padding: 0 ;
 }
 
 #navbar {
-    background-color: #e5a7bb !important;
+    background-color: rgb(168, 180, 32)!important;
     color: #2C2C2C !important;
 }
 
 #hero {
     background: url(../images/hero3.webp) no-repeat center center/cover ;
     background-size: cover ;
-    height: 100vh ;
+    height: 500px ;
     display: flex ;
     justify-content: center;
     align-items: center ;
     color: #2C2C2C ;
 }
+
+#btn{
+    width:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+}
 #middle{
     border-radius: 50%;
+    height: 200px;;
+}
+.image-size{
+    height: 400px;
 }
 #footer {
-    background-color: #e5a7bb !important;
+    background-color: rgb(168, 180, 32)!important;
     color: #2C2C2C ;
     position:relative;
     bottom: 0;
