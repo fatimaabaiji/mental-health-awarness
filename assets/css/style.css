@@ -1,15 +1,6 @@
 body{
-    
     padding: 0 ;
-}
-.image-background{
-    background: url(../images/bridge2.jpg) no-repeat center center/cover ;
-    background-size: cover ;
-    height: 100vh ;
-    display: flex ;
-    justify-content: center;
-    align-items: center;
-    color: #2C2C2C ;
+    color: #2C2C2C;
 }
 
 #navbar {
