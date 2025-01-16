@@ -1,14 +1,16 @@
 body{
     padding: 0 ;
-    color: #2C2C2C;
+    color: #2C2C2C !important;
+
 }
 
 #navbar {
-    background-color: rgb(168, 180, 32)!important;
-    color: #2C2C2C ;
+    background-color:rgb(168, 180, 32)!important;
+    color:#2C2C2C ;
     width: 100%;
-    position:sticky;
+    position:fixed;
     top: 0;
+    z-index: 1000; /* Ensure navbar stays on top */
 }
 /*hero*/
 #hero {
@@ -18,17 +20,21 @@ body{
     display: flex ;
     justify-content: center;
     align-items: center;
-    color: #2C2C2C ;
+    color: #79A4FE ;
+    margin-top: 80px; /* Adjust this value based on the height of your navbar */
+}
+#introduction{
+    margin-top:20px;
 }
 /*btn sizing*/
 .btn{
-    background-color: #73AD21;
-    width:100px;
-    height: 30px;
+    background-color:rgb(168, 180, 32);
+    width:150px;
+    height: 40px;
     display: flex;
-    font-size: 14px;
+    font-size: 16px;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     margin:0 auto;
 }
 /*middle image to make round*/
@@ -103,8 +109,8 @@ body{
 
 /*btn subscrition */
 #newsletter #button {
-    background-color: #73AD21;
-    color: #2C2C2C;
+    background-color:rgb(168, 180, 32);
+    color:#112A46;
     border: none;
     cursor: pointer;
     display: block;
@@ -117,13 +123,13 @@ body{
     transform: translateX(-50%);
 }
 #newsletter .btn:hover {
-    background-color: #2C2C2C;
+    background-color: #fed379;
     color: rgb(168, 180, 32);
 }
 
 #icons {
     font-size: 3rem; 
-    color: rgb(68, 100, 90);
+    color: #2C2C2C;
     transition: color 0.3s ease;
 }
 
@@ -138,13 +144,13 @@ body{
     }
 
     a:hover {
-        color: rgb(168, 180, 32);
+        color: #2C2C2C;
         text-decoration: underline;
     }
 }
 #footer {
-    background-color: rgb(168, 180, 32)!important;
-    color: #2C2C2C ;
+    background-color:rgb(168, 180, 32)!important;
+    color: #79A4FE ;
     width: 100%;
     position:absolute;
     bottom: 0;
@@ -156,12 +162,19 @@ input .form-control{
 }
 /*media query for mobile devices*/
 @media screen and (max-width: 768px) {
+    #accessible-resources {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
     #hero {
-        height: 100vh ;
+        margin-top: 40px; /* Adjusted to match the navbar height */
+        height: 50vh; /* Adjusted height for small devices */
         display: flex ;
         justify-content: center;
         align-items: center;
-        color: #2C2C2C ;
+        color: #2C2C2C;
+        padding-top: 60px; /* Additional padding to ensure content is not hidden */
     }
     #middle{
         border-radius: 50%;
@@ -182,25 +195,64 @@ input .form-control{
         width: 100%;
         position:sticky;
         bottom: 0;
-        
     }
-    
+    #navbar {
+        background-color:rgb(168, 180, 32)!important;
+        color:#2C2C2C ;
+        width: 100%;
+        position:fixed;
+        top: 0;
+    }
+    #introduction{
+        margin-top: 80px; /* Adjusted to match the navbar height */
+        padding-top: 20px; /* Additional padding to ensure content is not hidden */
+    }
+    .btn{
+        width: 100px;
+        height: 25px;
+        font-size: 12px;
+    }
+    #about {
+        flex-direction: column;
+        align-items: center;
+    }
+    #about-us{
+        margin: 10px;
+        padding: 10px;
+    }
+    #form-area{
+        width: 90%;
+    }
+    #newsletter {
+        padding: 10px;
+    }
+    #newsletter #email{
+        left: 0;
+        transform: none;
+    }
+    #newsletter #button {
+        max-width: 200px;
+        margin-top: 20px;
+    }
+    #icons {
+        font-size: 2rem; 
+    }
 }
 /*media query for tablets*/
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     #hero {
         height: 100vh ;
         display: flex ;
         justify-content: center;
         align-items: center;
-        color: #2C2C2C ;
+        color: #2C2C2C;
     }
     #middle{
         border-radius: 50%;
         height: 200px;;
     }
     .image-size{
-        height: 200px;
+        height: 300px;
     }
     .services{
         font-size: 14px;
@@ -209,45 +261,11 @@ input .form-control{
         height: 200px;
     }
     #footer {
-        background-color: rgb(168, 180, 32)!important;
-        color: #2C2C2C ;
+        background-color:rgb(168, 180, 32)!important;
+        color:#2C2C2C;
         width: 100%;
         position:sticky;
         bottom: 0;
-        
     }
-    
 }
 /*media query for desktops*/
-@media screen and (min-width: 1024px) {
-    #hero {
-        height: 100vh ;
-        display: flex ;
-        justify-content: center;
-        align-items: center;
-        color: #2C2C2C ;
-    }
-    #middle{
-        border-radius: 50%;
-        height: 200px;;
-    }
-    .image-size{
-        height: 400px;
-    }
-    .services{
-        font-size: 14px;
-    }
-    .service-image{
-        height: 200px;
-    }
-    #footer {
-        background-color: rgb(168, 180, 32)!important;
-        color: #2C2C2C ;
-        width: 100%;
-        position:sticky;
-        bottom: 0;
-        
-    }
-    
-}
-
