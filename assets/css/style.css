@@ -127,9 +127,9 @@ body{
     color: rgb(168, 180, 32);
 }
 
-#icons {
+i[aria-hidden="true"] {
     font-size: 3rem; 
-    color: #2C2C2C;
+    color: rgb(113, 79, 85);
     transition: color 0.3s ease;
 }
 
