@@ -137,7 +137,7 @@ i .icons:hover {
     color: #2C2C2C;
 }
 
-#table-links{
+.table-links{
     a {
         color: #2C2C2C;
         text-decoration: none;
