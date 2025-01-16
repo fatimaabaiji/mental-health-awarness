@@ -1,7 +1,9 @@
 body{
     padding: 0 ;
     color: #2C2C2C !important;
-
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 #navbar {
@@ -141,20 +143,16 @@ i .icons:hover {
     text-decoration: none;
  }
 
-a:hover {
+nav > a:hover {
     color: #2C2C2C;
     text-decoration: underline;
 }
-
 #footer{
     background-color:rgb(168, 180, 32)!important;
-    color: #79A4FE ;
+    color: #2C2C2C ;
     width: 100%;
-    position:absolute;
-    bottom: 0;
-    
+    margin-top: auto;
 }
-
 input .form-control{
     width: 100%;
     margin: 0 auto;
@@ -232,10 +230,11 @@ input .form-control{
     }
     #newsletter #button {
         max-width: 200px;
-        margin-top: 20px;
+        margin:0 ;
+      
     }
     i .icons{
-        font-size: 2rem; 
+        font-size: 3rem; 
     }
 }
 /*media query for tablets*/
@@ -256,13 +255,36 @@ input .form-control{
     #navbar ul li a:hover {
         text-decoration: underline;
     }
-}
     #hero {
-        height: 100vh ;
-        display: flex ;
+        height: 70vh; /* Adjusted height for tablet devices */
+        display: flex;
         justify-content: center;
         align-items: center;
         color: #2C2C2C;
+    }
+    #newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #newsletter #email {
+        width: 80%;
+        margin-bottom: 20px;
+        text-align: center;
+        position: relative;
+        left: 0;
+        transform: none;
+    }
+    #newsletter #button {
+        max-width: 200px;
+        margin-top: 40px;
+        position: absolute;
+        left: 50%;
+        transform: none;
+    }
+    #about {
+        flex-direction: row;
+        align-items: center;
     }
     #middle{
         border-radius: 50%;
@@ -278,11 +300,11 @@ input .form-control{
         height: 200px;
     }
     #footer {
-        background-color:rgb(168, 180, 32)!important;
-        color:#2C2C2C;
+        background-color: rgb(168, 180, 32) !important;
+        color: #2C2C2C; /* Updated text color */
         width: 100%;
-        position:fixed;
-        bottom: 0;
+        margin-top: auto;
     }
-
-/*media query for desktops*/
+    
+    
+}
