@@ -127,13 +127,13 @@ body{
     color: rgb(168, 180, 32);
 }
 
-i[aria-hidden="true"] {
+div > i[aria-hidden="true"] {
     font-size: 3rem; 
     color: rgb(113, 79, 85);
     transition: color 0.3s ease;
 }
 
-#icons:hover {
+i .icons:hover {
     color: #2C2C2C;
 }
 
