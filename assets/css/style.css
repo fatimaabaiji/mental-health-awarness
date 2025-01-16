@@ -161,6 +161,10 @@ input .form-control{
     margin: 0 auto;
 }
 /*media query for mobile devices*/
+#about-hero {
+    margin-top: 60px; /* Adjust this value based on the height of your navbar */
+}
+
 @media screen and (max-width: 768px) {
     #accessible-resources {
         width: 100%;
@@ -177,8 +181,8 @@ input .form-control{
         padding-top: 60px; /* Additional padding to ensure content is not hidden */
     }
     #middle{
-        border-radius: 50%;
-        height: 200px;;
+        border-radius: 0; /* Removed border radius */
+        height: 200px;
     }
     .image-size{
         height: 200px;
@@ -203,9 +207,13 @@ input .form-control{
         position:fixed;
         top: 0;
     }
+    #navbar ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
     #introduction{
         margin-top: 80px; /* Adjusted to match the navbar height */
-        padding-top: 20px; /* Additional padding to ensure content is not hidden */
     }
     .btn{
         width: 100px;
@@ -240,6 +248,23 @@ input .form-control{
 }
 /*media query for tablets*/
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    #navbar ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    #navbar ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    #navbar ul li a {
+        color: #2C2C2C;
+        text-decoration: none;
+    }
+    #navbar ul li a:hover {
+        text-decoration: underline;
+    }
+}
     #hero {
         height: 100vh ;
         display: flex ;
@@ -267,5 +292,5 @@ input .form-control{
         position:sticky;
         bottom: 0;
     }
-}
+
 /*media query for desktops*/
