@@ -2,12 +2,21 @@ body{
     
     padding: 0 ;
 }
+.image-background{
+    background: url(../images/bridge2.jpg) no-repeat center center/cover ;
+    background-size: cover ;
+    height: 100vh ;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    color: #2C2C2C ;
+}
 
 #navbar {
     background-color: rgb(168, 180, 32)!important;
     color: #2C2C2C ;
     width: 100%;
-    position:fixed;
+    position:sticky;
     top: 0;
 }
 /*hero*/
@@ -45,6 +54,27 @@ body{
 }
 .service-image{
     height: 200px;
+}
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#about-us{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    max-width: fit-content;
+}
+    
+#form-area{
+    text-align: center;
+    padding: 20px;
+    width:80%;
+    margin: 0 auto;
+
 }
 #footer {
     background-color: rgb(168, 180, 32)!important;
