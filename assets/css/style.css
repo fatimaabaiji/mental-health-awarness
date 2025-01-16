@@ -20,8 +20,9 @@ body{
     align-items: center;
     color: #2C2C2C ;
 }
-/*hero image btn sizing*/
+/*btn sizing*/
 .btn{
+    background-color: #73AD21;
     width:100px;
     height: 30px;
     display: flex;
@@ -66,6 +67,80 @@ body{
     width:80%;
     margin: 0 auto;
 
+}
+/*newsletter*/
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#newsletter #email{
+    color: #2C2C2C;
+    border: none;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    position: relative;
+    left: 20%;
+    transform: translateY(-50%);
+    border: #2C2C2C solid 1px;
+}
+#newsletter-title{
+    margin-bottom: 30px;
+    text-align: center;
+}
+#newsletter-description{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#newsletter #email {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*btn subscrition */
+#newsletter #button {
+    background-color: #73AD21;
+    color: #2C2C2C;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: auto;
+    max-width: 300px;
+    margin-top:40px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#newsletter .btn:hover {
+    background-color: #2C2C2C;
+    color: rgb(168, 180, 32);
+}
+
+#icons {
+    font-size: 3rem; 
+    color: rgb(68, 100, 90);
+    transition: color 0.3s ease;
+}
+
+#icons:hover {
+    color: #2C2C2C;
+}
+
+#table-links{
+    a {
+        color: #2C2C2C;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: rgb(168, 180, 32);
+        text-decoration: underline;
+    }
 }
 #footer {
     background-color: rgb(168, 180, 32)!important;

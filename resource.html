@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Main navigation">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="assets/images/logo.png" alt="MindSync Collective logo" width="30">
@@ -24,16 +24,16 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html" aria-label="Home page">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="about.html" aria-label="About page">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="resource.html">Resources</a>
+                        <a class="nav-link active" aria-current="page" href="resource.html" aria-label="Resources page">Resources</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html" aria-label="Contact page">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -42,171 +42,163 @@
     <!-- End Navbar -->
 
     <!-- Hero -->
-    <section id="hero" class="hero">
+    <section id="hero" class="hero" aria-labelledby="hero-title" aria-describedby="hero-text">
         <div class="container text-center d-flex align-items-center justify-content-center">
             <div class="row">
-                <h1 class="hero-title">MindSync Collective</h1>
-                <p class="hero-text">Join us in raising awareness about mental health and breaking the stigma surrounding mental health issues.</p>
-                <a id="btn" href="#" class="btn btn-primary">Join Us</a>
+                <h1 id="hero-title" class="hero-title">MindSync Collective</h1>
+                <p id="hero-text" class="hero-text">Join us in raising awareness about mental health and breaking the stigma surrounding mental health issues.</p>
+                <a id="btn" href="#" class="btn btn-primary" aria-label="Join Us">Join Us</a>
             </div>
         </div>
     </section>
     <!-- End Hero -->
 
     <!-- main section -->
-    <section id="services" class="services py-5">
+    <section id="resources" class="resources py-5" aria-labelledby="resources-title">
         <div class="container">
+            <h2 id="resources-title" class="text-center mb-4">Mental Health Resources</h2>
             <div class="row">
                 <div class="col-md-6 col-lg-3 mb-4">
                     <div class="card h-100">
-                        <img src="assets/images/councling.jpg" class="card-img-top service-image" alt="head with a brain note linked">
-                        <div class="card-body">
-                            <h5 class="card-title">Counseling Services</h5>
-                            <p class="card-text">Our professional counselors provide one-on-one sessions to help you navigate through life's challenges and improve your mental well-being.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                        <div class="card-body text-center">
+                            <i class="bi bi-book resource-icon" style="font-size: 3rem;"></i>
+                            <h5 class="card-title mt-3">Educational Articles</h5>
+                            <p class="card-text">Read our collection of articles on various mental health topics to gain a deeper understanding and learn new coping strategies.</p>
+                            <a href="#" class="btn btn-primary" aria-label="Learn more about Educational Articles">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
                     <div class="card h-100">
-                        <img src="assets/images/workshop.webp" class="card-img-top service-image" alt="fews people holding each other hands">
-                        <div class="card-body">
-                            <h5 class="card-title">Support Groups</h5>
-                            <p class="card-text">Join our support groups to connect with others who are experiencing similar issues. Share your experiences and gain support from peers.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                        <div class="card-body text-center">
+                            <i class="bi bi-camera-video resource-icon" style="font-size: 3rem;"></i>
+                            <h5 class="card-title mt-3">Informative Videos</h5>
+                            <p class="card-text">Watch our informative videos featuring mental health experts discussing various topics and providing practical advice.</p>
+                            <a href="#" class="btn btn-primary" aria-label="Learn more about Informative Videos">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
                     <div class="card h-100">
-                        <img src="assets/images/workshop1.jpg" class="card-img-top service-image" alt="people attending a workshop">
-                        <div class="card-body">
-                            <h5 class="card-title">Workshops and Seminars</h5>
-                            <p class="card-text">Attend our workshops and seminars to learn more about mental health, coping strategies, and self-care techniques from experts in the field.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                        <div class="card-body text-center">
+                            <i class="bi bi-tools resource-icon" style="font-size: 3rem;"></i>
+                            <h5 class="card-title mt-3">Self-Help Tools</h5>
+                            <p class="card-text">Explore our self-help tools designed to assist you in managing stress, anxiety, and other mental health challenges.</p>
+                            <a href="#" class="btn btn-primary" aria-label="Learn more about Self-Help Tools">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
                     <div class="card h-100">
-                        <img src="assets/images/online.webp" class="card-img-top service-image" alt="two people having a video call">
-                        <div class="card-body">
-                            <h5 class="card-title">Online Resources</h5>
-                            <p class="card-text">Access a wealth of online resources including articles, videos, and self-help tools to support your mental health journey anytime, anywhere.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                        <div class="card-body text-center">
+                            <i class="bi bi-people resource-icon" style="font-size: 3rem;"></i>
+                            <h5 class="card-title mt-3">Community Support</h5>
+                            <p class="card-text">Join our online community to connect with others, share your experiences, and receive support from peers and professionals.</p>
+                            <a href="#" class="btn btn-primary" aria-label="Learn more about Community Support">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
                 
     <!-- End main section -->
             
       <hr>
         <!-- Events Section -->
     
-    <section id="events" class="events py-5">
+    <section id="accessible-resources" class="resources py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Upcoming Events</h2>
+            <h2 class="text-center mb-4">Accessible Mental Health Resources</h2>
             <div class="table-responsive">
-                <table class="table table-striped">
+                <table class="table table-striped" aria-describedby="resources-description">
+                    <caption id="resources-description">A table listing various mental health resources with their descriptions and links.</caption>
                     <thead>
                         <tr>
-                            <th scope="col">Date</th>
-                            <th scope="col">Event</th>
-                            <th scope="col">Time</th>
-                            <th scope="col">Location</th>
+                            <th scope="col">Resource</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Link</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>March 15, 2023</td>
-                            <td>Mental Health Awareness Workshop</td>
-                            <td>10:00 AM - 12:00 PM</td>
-                            <td>Community Center</td>
+                            <td>Educational Articles</td>
+                            <td>Read our collection of articles on various mental health topics to gain a deeper understanding and learn new coping strategies.</td>
+                            <td><a href="#" id="table-links" aria-label="Learn more about Educational Articles">Learn More</a></td>
                         </tr>
                         <tr>
-                            <td>April 10, 2023</td>
-                            <td>Support Group Meeting</td>
-                            <td>2:00 PM - 4:00 PM</td>
-                            <td>Online (Zoom)</td>
+                            <td>Informative Videos</td>
+                            <td>Watch our informative videos featuring mental health experts discussing various topics and providing practical advice.</td>
+                            <td><a id="table-links" href="#" aria-label="Learn more about Informative Videos">Learn More</a></td>
                         </tr>
                         <tr>
-                            <td>May 5, 2023</td>
-                            <td>Self-Care Seminar</td>
-                            <td>1:00 PM - 3:00 PM</td>
-                            <td>Library Hall</td>
+                            <td>Self-Help Tools</td>
+                            <td>Explore our self-help tools designed to assist you in managing stress, anxiety, and other mental health challenges.</td>
+                            <td><a href="#" id="table-links" aria-label="Learn more about Self-Help Tools">Learn More</a></td>
                         </tr>
                         <tr>
-                            <td>June 20, 2023</td>
-                            <td>Mindfulness Meditation Session</td>
-                            <td>9:00 AM - 10:30 AM</td>
-                            <td>Park Pavilion</td>
+                            <td>Community Support</td>
+                            <td>Join our online community to connect with others, share your experiences, and receive support from peers and professionals.</td>
+                            <td><a href="#" id="table-links" aria-label="Learn more about Community Support">Learn More</a></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </section>
+   
 
         <!-- End Events Section -->
 
         <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials py-5 bg-light">
+    <section id="workshops" class="workshops py-5 bg-light" aria-labelledby="workshops-title">
         <div class="container">
-            <h2 class="text-center mb-4">Clients Testimonials</h2>
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel"></div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-flex justify-content-center">
-                            <div class="col-md-8">
-                                <div class="testimonial">
-                                    <p class="testimonial-text">"MindSync Collective has been a game-changer for me. The support groups and workshops have helped me immensely."</p>
-                                    <p class="testimonial-author">- John Doe</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex justify-content-center">
-                            <div class="col-md-8">
-                                <div class="testimonial">
-                                    <p class="testimonial-text">"The counseling services provided by MindSync Collective are top-notch. I feel more confident and positive now."</p>
-                                    <p class="testimonial-author">- Jane Smith</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex justify-content-center">
-                            <div class="col-md-8">
-                                <div class="testimonial">
-                                    <p class="testimonial-text">"The online resources are very helpful and accessible. I can get the support I need anytime, anywhere."</p>
-                                    <p class="testimonial-author">- Michael Johnson</p>
-                                </div>
-                            </div>
+            <h2 id="workshops-title" class="text-center mb-4">Upcoming Workshops</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mindfulness Workshop</h5>
+                            <p class="card-text">Join our mindfulness workshop to learn techniques for reducing stress and improving mental clarity.</p>
+                            <p class="card-text"><small class="text-muted">Date: October 15, 2023</small></p>
+                            <a href="#" class="btn btn-primary" aria-label="Learn more about the Mindfulness Workshop">Learn More</a>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next"></button>
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Coping Strategies</h5>
+                            <p class="card-text">Discover effective coping strategies for managing anxiety and depression in our interactive workshop.</p>
+                            <p class="card-text"><small class="text-muted">Date: October 22, 2023</small></p>
+                            <a href="#" class="btn btn-primary" aria-label="Learn more about the Coping Strategies Workshop">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Building Resilience</h5>
+                            <p class="card-text">Attend our workshop on building resilience to better handle life's challenges and setbacks.</p>
+                            <p class="card-text"><small class="text-muted">Date: October 29, 2023</small></p>
+                            <a href="#" class="btn btn-primary" aria-label="Learn more about the Building Resilience Workshop">Learn More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!-- End Testimonials Section -->
+
+
 
 <!-- Footer -->
-<footer id="footer" class="bg-light d-flex justify-content-center align-items-center">
+<footer id="footer" class="bg-light d-flex justify-content-center align-items-center" aria-labelledby="footer-title">
     <div class="container text-center">
         <div class="row">
             <div class="col-lg-12">
-                <p>&copy; 2023 MindSync Collective. All rights reserved.</p>
+                <p id="footer-title">&copy; 2023 MindSync Collective. All rights reserved.</p>
             </div>
         </div>
     </div>

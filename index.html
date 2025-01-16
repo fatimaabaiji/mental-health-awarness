@@ -12,11 +12,11 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Main navigation">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="assets/images/logo.png" alt="MindSync Collective logo" width="30">
-                MindSync Collective
+                <span class="sr-only">MindSync Collective</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,14 +42,12 @@
     <!-- End Navbar -->
 
     <!-- Hero -->
-    <section id="hero" class="hero">
+    <section id="hero" class="hero" aria-labelledby="hero-title" aria-describedby="hero-text">
         <div class="container text-center d-flex align-items-center justify-content-center">
             <div class="row">
-            
-                    <h1 class="hero-title">MindSync Collective</h1>
-                    <p class="hero-text">Join us in raising awareness about mental health and breaking the stigma surrounding mental health issues.</p>
-                    <a id="btn" href="#" class="btn btn-primary">Join Us</a>
-               
+                <h1 id="hero-title" class="hero-title">MindSync Collective</h1>
+                <p id="hero-text" class="hero-text">Join us in raising awareness about mental health and breaking the stigma surrounding mental health issues.</p>
+                <a id="btn" href="#" class="btn" aria-label="Join Us">Join Us</a>
             </div>
         </div>
     </section>
@@ -58,57 +56,60 @@
     <!-- main section -->
     <section id="main" class="py-5">
         <div class="container">
+            <div class="text-center justify-content-center">
+                <h2>Supporting Others</h2>
+                <p>Supporting friends and family with mental health issues can help them feel understood and less alone.</p>
+                <a href="#" class="btn" aria-label="Read more about supporting others">Read More</a>
+            </div>
             <div class="row mb-4">
                 <div class="col-lg-6 d-flex flex-column align-items-center text-center">
-                    <img src="assets/images/mental-emotional-well-being.jpeg" alt="Image 1" class="img-fluid mb-3 image-size">
+                    <i class="bi bi-heart-fill mb-3" id="icons" aria-hidden="true"></i>
                     <h2>Understanding Mental Health</h2>
                     <p>Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn" aria-label="Read more about understanding mental health">Read More</a>
                 </div>
                 <div class="col-lg-6 d-flex flex-column align-items-center text-center">
-                    <img  src="assets/images/calming.png" alt="Image 2" class="img-fluid mb-3 image-size">
+                    <i class="bi bi-people-fill mb-3" id="icons" aria-hidden="true"></i>
                     <h2>Importance of Mental Health</h2>
                     <p>Mental health is important at every stage of life, from childhood and adolescence through adulthood.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn" aria-label="Read more about the importance of mental health">Read More</a>
                 </div>
             </div>
-            <div class="row ">
+            <div class="row">
                 <div class="col-lg-12 d-flex flex-column align-items-center text-center">
-                    <img id="middle" src="assets/images/rest.jpg" alt="Image 5" class="img-fluid mb-3 image-size">
-                    <h2>Supporting Others</h2>
-                    <p>Supporting friends and family with mental health issues can help them feel understood and less alone.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                    <img id="middle" src="assets/images/rest.jpg" alt="A person resting" class="img-fluid mb-3 image-size">
                 </div>
             </div>
             <div class="row mb-4">
                 <div class="col-lg-6 d-flex flex-column align-items-center text-center">
-                    <img src="assets/images/Person-Walking.png" alt="Image 3" class="img-fluid mb-3 image-size">
+                    <i class="bi bi-exclamation-circle-fill mb-3" id="icons" aria-hidden="true"></i>
                     <h2>Recognizing Mental Health Issues</h2>
                     <p>Early warning signs can help identify mental health issues. These include changes in eating or sleeping habits.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn" aria-label="Read more about recognizing mental health issues">Read More</a>
                 </div>
                 <div class="col-lg-6 d-flex flex-column align-items-center text-center">
-                    <img src="assets/images/wamen-watering-flower.webp" alt="Image 4" class="img-fluid mb-3 image-size">
+                    <i class="bi bi-chat-dots-fill mb-3" id="icons" aria-hidden="true"></i>
                     <h2>Seeking Help</h2>
                     <p>Seeking help is a sign of strength. Professional help can make a significant difference in mental health recovery.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn" aria-label="Read more about seeking help">Read More</a>
                 </div>
             </div>
-        
         </div>
     </section>
     <!-- End main section -->
 
     <!-- Newsletter -->
+<section id="newsletter" class="bg-light py-5" aria-labelledby="newsletter-title" aria-describedby="newsletter-description">
     <div class="container">
-        <h2 class="text-center">Stay Updated</h2>
-        <p class="text-center">Subscribe to our newsletter to receive the latest updates and resources on mental health.</p>
-        <form class="row justify-content-center">
-            <div class="col-md-6">
-                <input type="email" class="form-control" placeholder="Enter your email">
+        <h2 id="newsletter-title" class="text-center">Stay Updated</h2>
+        <p id="newsletter-description" class="text-center">Subscribe to our newsletter to receive the latest updates and resources on mental health.</p>
+        <form class="row justify-content-center" aria-label="Newsletter subscription form">
+            <div class="col-md-6 mb-3">
+                <label for="email" class="visually-hidden">Email address</label>
+                <input id="email" type="email" class="form-control" placeholder="Enter your email" aria-required="true">
             </div>
             <div class="col-md-2">
-                <button type="submit" class="btn btn-primary">Subscribe</button>
+                <button id="button" type="submit" id="button" class="btn" aria-label="Subscribe to newsletter">Subscribe</button>
             </div>
         </form>
     </div>
@@ -116,11 +117,11 @@
 <!-- End Newsletter -->
 
 <!-- Footer -->
-<footer id="footer" class="bg-light d-flex justify-content-center align-items-center">
+<footer id="footer" class="bg-light d-flex justify-content-center align-items-center" aria-labelledby="footer-title">
     <div class="container text-center">
         <div class="row">
             <div class="col-lg-12">
-                <p>&copy; 2023 MindSync Collective. All rights reserved.</p>
+                <p id="footer-title">&copy; 2023 MindSync Collective. All rights reserved.</p>
             </div>
         </div>
     </div>
