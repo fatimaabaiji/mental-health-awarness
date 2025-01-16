@@ -91,7 +91,6 @@ body{
     position: relative;
     left: 20%;
     transform: translateY(-50%);
-    border: #2C2C2C solid 1px;
 }
 #newsletter-title{
     margin-bottom: 30px;
@@ -138,17 +137,16 @@ i .icons:hover {
 }
 
 .table-links{
-    a {
-        color: #2C2C2C;
-        text-decoration: none;
-    }
+     color: #2C2C2C;
+    text-decoration: none;
+ }
 
-    a:hover {
-        color: #2C2C2C;
-        text-decoration: underline;
-    }
+a:hover {
+    color: #2C2C2C;
+    text-decoration: underline;
 }
-#footer {
+
+#footer{
     background-color:rgb(168, 180, 32)!important;
     color: #79A4FE ;
     width: 100%;
@@ -156,6 +154,7 @@ i .icons:hover {
     bottom: 0;
     
 }
+
 input .form-control{
     width: 100%;
     margin: 0 auto;
@@ -192,13 +191,6 @@ input .form-control{
     }
     .service-image{
         height: 200px;
-    }
-    #footer {
-        background-color: rgb(168, 180, 32)!important;
-        color: #2C2C2C ;
-        width: 100%;
-        position:sticky;
-        bottom: 0;
     }
     #navbar {
         background-color:rgb(168, 180, 32)!important;
@@ -289,7 +281,7 @@ input .form-control{
         background-color:rgb(168, 180, 32)!important;
         color:#2C2C2C;
         width: 100%;
-        position:sticky;
+        position:fixed;
         bottom: 0;
     }
 
