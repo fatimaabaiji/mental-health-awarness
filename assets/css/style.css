@@ -26,6 +26,7 @@ body{
     background: url(../images/bridges.jpeg) no-repeat center center/cover ;
     background-size: cover ;
     height: 100vh ;
+    width: auto;
     display: flex ;
     justify-content: center;
     align-items: center;
