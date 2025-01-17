@@ -30,7 +30,6 @@ body{
     justify-content: center;
     align-items: center;
     color: #2C2C2C;
-    margin-top: 80px; /* Adjust this value based on the height of your navbar */
 }
 #introduction{
     margin-top:20px;
@@ -53,11 +52,8 @@ body{
     height: 400px;
 }
 /*make all the services images the same size*/
-.services{
+.reasoures{
     font-size: 14px;
-}
-.service-image{
-    height: 200px;
 }
 #about {
     display: flex;
