@@ -1,5 +1,8 @@
 # Mental Health Awareness Project
 
+### Home Page Wireframe
+![Home Page Wireframe](assets/images/)
+
 Welcome to the Mental Health Awareness Project! This project aims to raise awareness about mental health issues and provide resources for those in need.
 
 ## Table of Contents
@@ -7,9 +10,11 @@ Welcome to the Mental Health Awareness Project! This project aims to raise aware
 - [Goals](#goals)
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact Information](#contact-information)
+- [Index Page](#index-page)
+- [About Us Page](#about-us-page)
+- [Contact Page](#contact-page)
+- [Resource Page](#resource-page)
 
 ## Introduction
 Mental health is a crucial aspect of overall well-being. This project is dedicated to educating people about mental health, reducing stigma, and offering support and resources.
@@ -29,18 +34,21 @@ Mental health is a crucial aspect of overall well-being. This project is dedicat
 ## Getting Started
 To get started with the project, visit the deployed site at [Mental Health Awareness Project](https://fatimaabaiji.github.io/mental-health-awarness/).
 
-## Contributing
-We welcome contributions from the community. If you would like to contribute, please follow these steps:
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Commit your changes and push them to your branch.
-4. Submit a pull request with a detailed description of your changes.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Contact Information
 For any questions or inquiries, please contact us at:
 - Email: [fatima.abaiji@gmail.com](mailto:fatima.abaiji@gmail.com)
 
-Thank you for your interest in the Mental Health Awareness Project!
+## Index Page
+The index page provides an overview of the project, including the latest updates and featured articles.
+
+## About Us Page
+The about us page introduces the Mental Health Awareness Project and outlines our mission and values.
+
+## Contact Page
+The contact page provides various ways to get in touch with us, including a contact form and social media links.
+
+## Resource Page
+The resource page offers a comprehensive directory of mental health support resources, including hotlines, websites, and local services.
+
+Thank you for your interest in the Mental Health Awareness Project! Mental Health Awareness Project

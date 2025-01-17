@@ -1,9 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+
 body{
     padding: 0 ;
     color: #2C2C2C !important;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: "Noto Sans Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #navbar {
@@ -16,7 +23,7 @@ body{
 }
 /*hero*/
 #hero {
-    background: url(../images/bridge2.jpg) no-repeat center center/cover ;
+    background: url(../images/bridges.jpeg) no-repeat center center/cover ;
     background-size: cover ;
     height: 100vh ;
     display: flex ;
@@ -162,81 +169,257 @@ input .form-control{
     margin-top: 60px; /* Adjust this value based on the height of your navbar */
 }
 
-@media screen and (max-width: 768px) {
-    #accessible-resources {
+/*media query for devices below 576px*/
+@media screen and (max-width: 575px) {
+    #navbar {
+        background-color: rgb(168, 180, 32) !important;
+        color: #2C2C2C;
         width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+    }
+    #navbar ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    #navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    #navbar ul li a {
+        color: #2C2C2C;
+        text-decoration: none;
+    }
+    #navbar ul li a:hover {
+        text-decoration: underline;
     }
     #hero {
         margin-top: 40px; /* Adjusted to match the navbar height */
         height: 50vh; /* Adjusted height for small devices */
-        display: flex ;
+        display: flex;
         justify-content: center;
         align-items: center;
         color: #2C2C2C;
         padding-top: 60px; /* Additional padding to ensure content is not hidden */
     }
-    #middle{
-        border-radius: 0; /* Removed border radius */
-        height: 200px;
+    #middle {
+        border-radius: 50%; /* Apply border radius */
+        height: 150px;
     }
-    .image-size{
-        height: 200px;
+    .image-size {
+        height: 150px;
     }
-    .services{
-        font-size: 14px;
+    .services {
+        font-size: 12px;
     }
-    .service-image{
-        height: 200px;
+    .service-image {
+        height: 150px;
     }
-    #navbar {
-        background-color:rgb(168, 180, 32)!important;
-        color:#2C2C2C ;
-        width: 100%;
-        position:fixed;
-        top: 0;
-    }
-    #navbar ul {
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-    }
-    #introduction{
+    #introduction {
         margin-top: 80px; /* Adjusted to match the navbar height */
     }
-    .btn{
-        width: 100px;
-        height: 25px;
-        font-size: 12px;
+    .btn {
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
     }
     #about {
         flex-direction: column;
         align-items: center;
     }
-    #about-us{
+    #about-us {
         margin: 10px;
         padding: 10px;
     }
-    #form-area{
+    #form-area {
         width: 90%;
     }
     #newsletter {
         padding: 10px;
     }
-    #newsletter #email{
-        left: 0;
+    #newsletter #email {
+        width: 80%;
+        margin: 0 auto 5px auto;
+        text-align: center;
+        position: relative;
+        left: 35px;
         transform: none;
     }
     #newsletter #button {
-        max-width: 200px;
-        margin:0 ;
-      
+        max-width: 150px;
+        margin: auto;
     }
-    i .icons{
-        font-size: 3rem; 
+    i .icons {
+        font-size: 2rem;
     }
 }
+
+
+    /*media query for mobile devices*/
+    @media screen and (max-width: 768px) {
+        #accessible-resources {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        #hero {
+            margin-top: 40px; /* Adjusted to match the navbar height */
+            height: 50vh; /* Adjusted height for small devices */
+            display: flex ;
+            justify-content: center;
+            align-items: center;
+            color: #2C2C2C;
+            padding-top: 60px; /* Additional padding to ensure content is not hidden */
+        }
+        #middle{
+            border-radius: 50%; /* Apply border radius */
+            height: 200px;
+        }
+        .image-size{
+            height: 200px;
+        }
+        .services{
+            font-size: 14px;
+        }
+        .service-image{
+            height: 200px;
+        }
+        #navbar {
+            background-color:rgb(168, 180, 32)!important;
+            color:#2C2C2C ;
+            width: 100%;
+            position:fixed;
+            top: 0;
+        }
+        #navbar ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+        }
+        #navbar ul li {
+            display: block;
+            margin: 10px 0;
+        }
+        #navbar ul li a {
+            color: #2C2C2C;
+            text-decoration: none;
+        }
+        #navbar ul li a:hover {
+            text-decoration: underline;
+        }
+        #introduction{
+            margin-top: 80px; /* Adjusted to match the navbar height */
+        }
+        .btn{
+            width: 100px;
+            height: 25px;
+            font-size: 12px;
+        }
+        #about {
+            flex-direction: column;
+            align-items: center;
+        }
+        #about-us{
+            margin: 10px;
+            padding: 10px;
+        }
+        #form-area{
+            width: 90%;
+        }
+        #newsletter {
+            padding: 10px;
+        }
+        #newsletter > #email{
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+            position: relative;
+            right:0;
+        }
+        #newsletter #button {
+            max-width: 200px;
+            margin: auto;
+        }
+        i .icons{
+            font-size: 3rem; 
+        }
+    }
+
+    /*media query for tablets*/
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        #navbar ul {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        #navbar ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        #navbar ul li a {
+            color: #2C2C2C;
+            text-decoration: none;
+        }
+        #navbar ul li a:hover {
+            text-decoration: underline;
+        }
+        #hero {
+            height: 70vh; /* Adjusted height for tablet devices */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #2C2C2C;
+        }
+        #newsletter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #newsletter #email {
+            width: 80%;
+            text-align: center;
+            position: relative;
+            left:45%;
+            transform: none;
+            margin-bottom: 20px;
+        }
+        #newsletter #button {
+            max-width: 200px;
+            margin-top: 20px;
+            position: relative;
+            left: 0;
+            transform: none;
+        }
+        #about {
+            flex-direction: row;
+            align-items: center;
+        }
+        #middle {
+            border-radius: 50%;
+            height: 200px;
+        }
+        .image-size {
+            height: 300px;
+        }
+        .services {
+            font-size: 14px;
+        }
+        .service-image {
+            height: 200px;
+        }
+        #footer {
+            background-color: rgb(168, 180, 32) !important;
+            color: #2C2C2C; /* Updated text color */
+            width: 100%;
+            margin-top: auto;
+        }
+    }
+    
+
+    
 /*media query for tablets*/
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     #navbar ul {
@@ -272,14 +455,14 @@ input .form-control{
         margin-bottom: 20px;
         text-align: center;
         position: relative;
-        left: 0;
+        left: 33%;
         transform: none;
     }
     #newsletter #button {
         max-width: 200px;
-        margin-top: 40px;
+        margin-top: 50px;
         position: absolute;
-        left: 50%;
+        left: 45%;
         transform: none;
     }
     #about {
@@ -288,7 +471,8 @@ input .form-control{
     }
     #middle{
         border-radius: 50%;
-        height: 200px;;
+        height: 200px;
+
     }
     .image-size{
         height: 300px;
